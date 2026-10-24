@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Una página sencilla para conocer el mundo de la fotografía.">
+  <title>El mundo de la fotografía</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 0 5px; font-family: "Times New Roman", serif; line-height: 1.25; color: #000; background: #fff; }
+    header { padding: 0; }
+    header p { margin: 1em 0; }
+    nav { margin: 1em 0; }
+    nav a { margin-right: 1em; }
+    main { max-width: none; margin: 0; padding: 0; }
+    section { margin-bottom: 1.25em; }
+    h2 { color: #000; }
+    .cards { display: flex; flex-wrap: wrap; gap: 4px; align-items: flex-start; }
+    figure { margin: 0; background: transparent; border-radius: 0; overflow: visible; box-shadow: none; }
+    figure img { display: block; width: 200px; height: 150px; object-fit: cover; }
+    figcaption { padding: 0; max-width: 200px; }
+    .resource { display: inline; background: transparent; color: #00e; padding: 0; border-radius: 0; text-decoration: underline; font-weight: normal; }
+    footer { background: transparent; color: #000; text-align: left; padding: 0; }
+    @media (max-width: 620px) { figure img { width: min(200px, 44vw); height: 130px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>El mundo de la fotografía</h1>
+    <p>La fotografía nos permite capturar momentos, expresar ideas y observar el mundo desde diferentes perspectivas.</p>
+  </header>
+  <nav aria-label="Navegación principal">
+    <a href="#sobre">Acerca de</a>
+    <a href="#herramientas">Datos rápidos</a>
+    <a href="#recursos">Galería y recursos</a>
+  </nav>
+  <main>
+    <section id="sobre">
+      <h2>Acerca de</h2>
+      <p>La fotografía es una forma de arte y comunicación que utiliza imágenes para contar historias, guardar recuerdos y mostrar detalles que muchas veces pasan desapercibidos.</p>
+      <div class="cards">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=600&q=80" alt="Cámara fotográfica" loading="lazy">
+          <figcaption><strong>Cámara fotográfica</strong></figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=600&q=80" alt="Paisaje natural fotografiado" loading="lazy">
+          <figcaption><strong>Fotografía de paisajes</strong></figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=600&q=80" alt="Flores fotografiadas de cerca" loading="lazy">
+          <figcaption><strong>Fotografía de naturaleza</strong></figcaption>
+        </figure>
+      </div>
+    </section>
+    <section id="herramientas">
+      <h2>Datos rápidos</h2>
+      <h3>Tipos de fotografía</h3>
+      <ul>
+        <li>Fotografía de paisajes.</li>
+        <li>Fotografía de retratos.</li>
+        <li>Fotografía de naturaleza.</li>
+        <li>Fotografía deportiva.</li>
+      </ul>
+    </section>
+    <section id="recursos">
+      <h2>Para aprender más</h2>
+      <p>Si quieres conocer consejos y técnicas para mejorar tus fotografías, puedes consultar esta guía:</p>
+      <a class="resource" href="https://www.nationalgeographic.com/photography" target="_blank" rel="noopener noreferrer">Consejos de fotografía en National Geographic</a>
+    </section>
+  </main>
+  <footer>
+    <p>Trabajo de práctica HTML.</p>
+  </footer>
+</body>
+</html>
